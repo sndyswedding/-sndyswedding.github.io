@@ -5354,7 +5354,7 @@ button.close {
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-    background-image: url(/images/modal.jpg);
+    background-image: url(~/images/modal.jpg);
     background-size:cover;
     background-position: center;
 
@@ -5365,7 +5365,7 @@ button.close {
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
-  background-image: url(/images/modal.jpg);
+  background-image: url(~/images/modal.jpg);
   background-size:cover;
   background-position: center;
 
