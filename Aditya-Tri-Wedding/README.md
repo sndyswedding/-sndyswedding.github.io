@@ -1,2 +1,0 @@
-# drpurwa.github.io
-Pawiwahan
