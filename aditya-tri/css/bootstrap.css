@@ -2628,7 +2628,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
   border-color: #ccc;
 } 
 .btn-default2 {
-  color: red;
+  color: #654321;
   background-color: peachpuff;
   border-color: #ccc;
 
@@ -5379,7 +5379,7 @@ button.close {
 
 .modal-content {
     position: relative;
-    background-color: white;
+    background-color: #fffdd0;
     height: 100%;
   
 
@@ -5413,7 +5413,7 @@ button.close {
 
 .modal-header {
     padding: 15px;
-    border-bottom: 2px dashed #f14e95;
+    border-bottom: 2px dashed #654321;
     min-height: 16.42857px;
     text-align: center
 }
@@ -5432,7 +5432,7 @@ button.close {
   position: relative;
   padding: 15px;
   text-align:center;
-  color: white;
+  color: #fffdd0;
   
 }
 
