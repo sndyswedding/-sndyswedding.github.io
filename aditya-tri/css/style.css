@@ -16,8 +16,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #828282;
-  background: #fff;
+  color: #654321;
+  background: #fffdd0;
 }
 
 #page {
@@ -429,7 +429,7 @@ figure {
 
 #fh5co-counter .fh5co-heading h2,
 #fh5co-event .fh5co-heading h2 {
- color: #F14E95;
+ color: #654321;
 }
 
 #fh5co-counter .fh5co-heading span,
@@ -878,7 +878,7 @@ figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  color: #F14E95;
+  color: #654321;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -900,7 +900,7 @@ figure {
 }
 
 .fh5co-contact-info ul li:before {
-  color: #F14E95;
+  color: #654321;
   position: absolute;
   left: 0;
   top: .05em;
@@ -1214,7 +1214,7 @@ form label {
 
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
+  color: #654321;
   font-size: 30px;
 }
 
@@ -1355,7 +1355,7 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
+  color: #654321;
   font-family: "Sacramento", Arial, serif;
 }
 
@@ -1368,7 +1368,7 @@ form label {
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
-  color: #828282;
+  color: #654321;
 }
 
 .fh5co-heading span {
