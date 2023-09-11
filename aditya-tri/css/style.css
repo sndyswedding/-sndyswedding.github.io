@@ -2218,7 +2218,7 @@ html {
   position: absolute;
   top: 0px;
   right: -20px;
-  width:30%;
+  width:50%;
   }
   #topLeft {
     position: relative;
@@ -2227,7 +2227,7 @@ html {
     position: absolute;
     top: 0px;
     left: -20px;
-    width:30%;
+    width:50%;
     }
   
 
