@@ -966,7 +966,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Elsie Swash Caps", Arial, serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -993,7 +993,7 @@ form label {
   font-size:60px;
   line-height: 1.5;
   margin-bottom: 10px;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Elsie Swash Caps", Arial, serif;
 }
 
 @media screen and (max-width: 480px) {
@@ -1078,10 +1078,10 @@ form label {
 .simply-countdown>.simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: rgba(241, 78, 149, 0.8);
-  margin: 0 4px;
+  width: 70px;
+  height: 70px;
+  background:#654321;
+  margin: 0 3px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1108,8 +1108,9 @@ form label {
   /* countdown block inner div */
   display: table-cell;
   vertical-align: middle;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
+  
 }
 
 .simply-countdown>.simply-section .simply-amount,
@@ -1120,14 +1121,14 @@ form label {
 }
 
 .simply-countdown>.simply-section .simply-amount {
-  font-size: 30px;
+  font-size: 15px;
   /* amounts */
 }
 
 .simply-countdown>.simply-section .simply-word {
-  color: rgba(255, 255, 255, 0.7);
+  color:  white;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
   /* words */
 }
 
@@ -1213,7 +1214,7 @@ form label {
 }
 
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Arizona", Arial, serif;
   color: #654321;
   font-size: 30px;
 }
@@ -1356,7 +1357,7 @@ form label {
   line-height: 1.5;
   font-weight: bold;
   color: #654321;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Elsie Swash Caps", Arial, serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -2182,6 +2183,27 @@ html {
 .audio-player:hover {
   background-color:peachpuff;
 }
+
+
+#topRight {
+  position: relative;
+  }
+.gambar {
+  position: absolute;
+  top: 0px;
+  right: -20px;
+  width:30%;
+  }
+  #topLeft {
+    position: relative;
+    }
+  .gambar2 {
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    width:30%;
+    }
+  
 
 
 
