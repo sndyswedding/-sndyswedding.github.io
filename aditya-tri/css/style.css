@@ -1576,7 +1576,7 @@ form label {
 
 #fh5co-started .form-control {
   background: rgba(255, 255, 255, 0.2);
-  border: #654321 !important;
+  /* border:none !important; */
   color: #654321;
   font-size: 16px !important;
   width: 100%;
@@ -1650,22 +1650,22 @@ form label {
 }
 
 .owl-carousel .owl-controls .owl-dot span {
-  background: #e6e6e6;
+  background: #654321;
 }
 
 .owl-carousel .owl-controls .owl-dot span:hover,
 .owl-carousel .owl-controls .owl-dot span:focus {
-  background: #cccccc;
+  background: #654321;
 }
 
 .owl-carousel .owl-controls .owl-dot:hover span,
 .owl-carousel .owl-controls .owl-dot:focus span {
-  background: #cccccc;
+  background: #654321;
 }
 
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
-  border: 2px solid #F14E95;
+  border: 2px solid #654321;
 }
 
 #fh5co-offcanvas {
