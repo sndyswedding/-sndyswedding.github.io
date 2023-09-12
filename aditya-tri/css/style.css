@@ -380,7 +380,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover2 {
-    height: 400px;
+    height: 300px;
   }
 }
 
@@ -410,7 +410,7 @@ figure {
 
   .fh5co-cover2 .display-t,
   .fh5co-cover2 .display-tc {
-    height: 400px;
+    height: 300px;
   }
 }
 .fh5co-cover.fh5co-cover-sm {

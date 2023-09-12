@@ -673,33 +673,36 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Are You Attending?</h2>
-					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
+					<h2>Kirim Pesan Kehadiran</h2>
+					<p>Tulis pesan dibawah apabila bisa menghadiri acara kami, Terima Kasih</p>
 				</div>
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
+					<form id="form" class="form-inline">
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
+								<label for="from_name"></label>
+								<input type="text" class="form-control" name="from_name" id="from_name" placeholder="Nama">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
+								<label for="message"></label>
+								<input type="text" class="form-control" name="message" id="message" placeholder="Message">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
+							<button type="submit" id="button_email" class="btn btn-default btn-block">Kirim Pesan</button>
+							
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div> 
+
+
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -788,10 +791,50 @@
         enableUtc: false
     });
 </script>
+<!-- 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "sndyswedding@gmail.com",
+    Password : "88ED8A0AE63487D5A3EAAA9A3A41ED4E62C1",
+    To : 'king.purwa@gmail.com',
+    From : "sndyswedding@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+</script> -->
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('sH_rmD2e-MYY8McU-')
+const btn = document.getElementById('button_email');
+
+document.getElementById('form')
+  .addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.value = 'Sending...';
+
+    const serviceID = 'service_bh5cves';
+    const templateID = 'template_zrub0w8';
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Send Email';
+        alert('Sent!');
+      }, (err) => {
+        btn.value = 'Send Email';
+        alert(JSON.stringify(err));
+      });
+  });
 
 
-
-
+</script>
 
 	</body>
 </html>
