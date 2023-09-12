@@ -495,9 +495,9 @@ figure {
 
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
-  border: 2px solid #8a6d3b;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 30px;
+  /* border: 2px solid #8a6d3b; */
+  /* background: rgba(255, 255, 255,0); */
+  /* padding: 30px; */
   width: 100%;
   float: left;
   -webkit-border-radius: 4px;
@@ -518,9 +518,10 @@ figure {
 #fh5co-event .event-wrap h3 {
   font-size: 24px;
   color:#8a6d3b;
-  border-bottom: 1px solid #8a6d3b;
+  background-color: wheat;
+  /* border-bottom: 1px solid #8a6d3b; */
   display: block;
-  padding-bottom: 20px;
+  padding: 30px;
   text-transform: uppercase;
   font-weight:bold;
   letter-spacing: 2px;
@@ -1106,12 +1107,12 @@ form label {
   display: inline-block;
   width: 70px;
   height: 70px;
-  background:#654321;
+  background:wheat;
   margin: 0 3px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  border-radius: 0;
   position: relative;
   animation: pulse 1s ease infinite;
 }
@@ -1142,7 +1143,7 @@ form label {
 .simply-countdown>.simply-section .simply-amount,
 .simply-countdown>.simply-section .simply-word {
   display: block;
-  color: white;
+  color: #654321;
   /* amounts and words */
 }
 
@@ -1152,7 +1153,7 @@ form label {
 }
 
 .simply-countdown>.simply-section .simply-word {
-  color:  white;
+  color:  #654321;
   text-transform: uppercase;
   font-size: 10px;
   /* words */
@@ -1276,9 +1277,9 @@ form label {
 
   .couple-half .groom img,
   .couple-half .bride img {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
+    width: 150px;
+    height: 170px;
+    margin: -40px auto;
   }
 }
 
@@ -1313,6 +1314,7 @@ form label {
   .couple-half .desc-groom {
     padding-right: 0;
     text-align: center;
+    margin-bottom: 100px;
   }
 
   .couple-half .desc-bride {
@@ -1565,17 +1567,17 @@ form label {
 }
 
 #fh5co-started .fh5co-heading h2 {
-  color: #fff;
+  color: #654321;
 }
 
 #fh5co-started .fh5co-heading p {
-  color: rgba(255, 255, 255, 0.5);
+  color: #654321;
 }
 
 #fh5co-started .form-control {
   background: rgba(255, 255, 255, 0.2);
   border: none !important;
-  color: #fff;
+  color: #654321;
   font-size: 16px !important;
   width: 100%;
   -webkit-transition: 0.5s;
@@ -1584,21 +1586,21 @@ form label {
 }
 
 #fh5co-started .form-control::-webkit-input-placeholder {
-  color: #fff;
+  color: #654321;
 }
 
 #fh5co-started .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #fff;
+  color: #654321;
 }
 
 #fh5co-started .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #fff;
+  color: #654321;
 }
 
 #fh5co-started .form-control:-ms-input-placeholder {
-  color: #fff;
+  color: #654321;
 }
 
 #fh5co-started .form-control:focus {
@@ -1608,8 +1610,8 @@ form label {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #F14E95;
-  color: #fff;
+  background: wheat;
+  color: #654321;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
