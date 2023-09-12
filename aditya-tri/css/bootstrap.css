@@ -5379,7 +5379,7 @@ button.close {
 
 .modal-content {
     position: relative;
-    background-color: #fffdd0;
+    background-color: white;
     height: 100%;
   
 
@@ -5432,7 +5432,7 @@ button.close {
   position: relative;
   padding: 15px;
   text-align:center;
-  color: #fffdd0;
+  color: white;
   
 }
 
