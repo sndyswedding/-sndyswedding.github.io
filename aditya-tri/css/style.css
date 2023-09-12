@@ -76,7 +76,7 @@ h5,
 h6,
 figure {
   color: #000;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Arizona", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -2231,6 +2231,25 @@ html {
     }
   
 
+#bawahRight {
+      position: relative;
+      }
+  .gambar3 {
+      position: absolute;
+      bottom: -50px;
+      right: -20px;
+      width:50%;
+      }
+      #bawahLeft {
+        position: relative;
+        }
+      .gambar4 {
+        position: absolute;
+        bottom: -50px;
+        left: -20px;
+        width:50%;
+        }
+     
 
 
 /*# sourceMappingURL=style.css.map */
