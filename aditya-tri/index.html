@@ -428,51 +428,51 @@
 			
 
 	<div class="grid-wrapper">
-		<div class="tall" >
 
+			<div class="tall" >
 			<a href="images/1gallery-1.jpg">
 			<img src="images/1gallery-1.jpg" alt="1" >
 			</a>
-		</div>
-		<div class="tall" >
-
+			</div>
+			<div class="tall" >
 			<a href="images/1gallery-5.jpg">
 			<img src="images/1gallery-5.jpg" alt="2" >
 			</a>
-		</div>
-		<div class="wide" >
+			</div>
 
+			<div class="wide" >
 			<a href="images/1gallery-6.jpg">
 			<img src="images/1gallery-6.jpg" alt="3" >
 			</a>
-		</div>
-		<div >
-
+			</div>
+			
+			<div >
 			<a href="images/1gallery-4.jpg">
 			<img src="images/1gallery-4.jpg" alt="4" >
 			</a>
-		</div>
-		<div >
+			</div>
 
+			<div >
 			<a href="images/1gallery-7.jpg">
 			<img src="images/1gallery-7.jpg" alt="5" >
 			</a>
-		</div>
-		<div class="wide" >
-
+			</div>
+			
+			<div class="wide" >
 			<a href="images/1gallery-3.jpg">
 			<img src="images/1gallery-3.jpg" alt="7" >
 			</a>
-		</div>
-		<div class="big" >
-
+			</div>
+			
+			<div class="big" >
 			<a href="images/Cover4.jpg">
 			<img src="images/Cover4.jpg" alt="8" >
 			</a>
-		</div>
-		
+			</div>
 	</div>
-
+		</div>
+	</div>
+</div>
 
 	<!-- 
 	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
@@ -672,7 +672,7 @@
 					</form> -->
 				
 
-					<form id="my-form" class="form-inline" method="POST" action="https://script.google.com/macros/s/AKfycbyM3thaoIG_046FzqnmLVBYgtgHzGJ9xITUCxS4OjfxhH6OPWr_mjqZ1ditnGyPuh-hTw/exec">
+					<form id="my-form" class="form-inline" >
 						<div >
 							<div class="form-group">
 								<input name="Name" class="form-control" type="text" placeholder="Nama" required>
@@ -728,6 +728,7 @@
 			<img src="images/Border1bawah.png" class="gambar4" alt="" />
 	</footer>
 </div>
+
 
 	<!-- ini adalah kursor goto
 		
@@ -795,52 +796,42 @@
     });
 </script>
 
-<script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<script type="text/javascript">
-  emailjs.init('sH_rmD2e-MYY8McU-')
-const btn = document.getElementById('button_email');
-
-document.getElementById('form')
-  .addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    btn.value = 'Sending...';
-
-    const serviceID = 'service_bh5cves';
-    const templateID = 'template_zrub0w8';
-
-    emailjs.sendForm(serviceID, templateID, this)
-      .then(() => {
-        btn.value = 'Send Email';
-        alert('Sent!');
-      }, (err) => {
-        btn.value = 'Send Email';
-        alert(JSON.stringify(err));
-      });
-  });
-</script>
-
-
+<!-- ini google sheett--> 
 <script>
-	window.addEventListener("load", function() {
-	  const form = document.getElementById('my-form');
-	  form.addEventListener("submit", function(e) {
-		e.preventDefault();
-		const data = new FormData(form);
-		const action = e.target.action;
-		fetch(action, {
-		  method: 'POST',
-		  body: data,
-		})
-		.then(() => {
-		  alert("Success!");
-		})
-	  });
-	});
+
+
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbyM3thaoIG_046FzqnmLVBYgtgHzGJ9xITUCxS4OjfxhH6OPWr_mjqZ1ditnGyPuh-hTw/exec'
+    const form = document.querySelector('#my-form')
+    const btn1 = document.querySelector('#button_email')
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      btn1.disabled = true
+      btn1.innerHTML = "Loading..."
+
+      console.log(form)
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => { 
+              btn1.disabled = false
+      btn1.innerHTML = "Kirim Pesan"
+            alert('Success!', response) })
+        .catch(error => {
+                     btn1.disabled = false
+      btn1.innerHTML = "Kirim Pesan"
+            alert('Error!', error.message)})
+    })
+
+	
 </script>	  
 
 
 	</body>
+
+
+
+
+
+
 </html>
